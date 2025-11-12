@@ -1,0 +1,31 @@
+        /* Configuración de tema (fuente Inter) */
+        :root {
+            --font-inter: 'Inter', sans-serif;
+        }
+
+        /* Aplicar la fuente */
+        body {
+            font-family: var(--font-inter);
+        }
+
+        /* Ocultar la barra de desplazamiento en el cuerpo principal */
+        body {
+            overflow: hidden; 
+        }
+
+        /* Estilos de la barra de desplazamiento para el área de tareas */
+        #taskList::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #taskList::-webkit-scrollbar-thumb {
+            background-color: rgb(156 163 175 / 0.5); /* gray-400 */
+            border-radius: 4px;
+        }
+        
+        /* Modo oscuro */
+        .dark #taskList::-webkit-scrollbar-thumb {
+            background-color: rgb(75 85 99 / 0.5); /* gray-600 */
+        }
+
+ 
